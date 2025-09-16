@@ -6,7 +6,9 @@ Nama kandidat: Rifqi Haidar Muntazari
 Lihat di [soal.md](soal.md)
 
 ## Solusi
-Solusi untuk soal nomor 1-6 ada di [pets/pets.go](pets/pets.go), nomor 7-8 ada di [utils/utils.go](utils/utils.go), dan nomor 9 ada di [utils/reformatjson.go](utils/reformatjson.go). Sedangkan implementasinya ada di [main.go](main.go)
+Solusi untuk soal nomor 1-6 ada di [pets/pets.go](pets/pets.go), nomor 7-8 ada di [utils/utils.go](utils/utils.go), dan nomor 9 ada di [utils/reformatjson.go](utils/reformatjson.go). Sedangkan implementasinya ada di [main.go](main.go).
+
+Bahasa pemrograman: Golang (go v1.24.1).
 
 ## Implementasi
 Silakan run command ini:
