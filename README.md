@@ -18,7 +18,7 @@ go run main.go
 ### Hasil
 Silakan lihat di [hasil.txt](hasil.txt)
 
-Note: hasil reformat JSON ada di [json/result.json](json/result.json)
+Note: hasil reformat JSON (soal no. 9) ada di [json/result.json](json/result.json)
 
 ## Unit Test
 Silakan run command ini:
