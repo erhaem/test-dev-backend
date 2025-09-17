@@ -52,17 +52,17 @@ after replaced:
 {Type:Badak Breed:Jawa Name:Rino Characteristic:[Pekerja keras] Favorite:true}
 --------------
 No. 5 - count pets by type
-Anjing: 3
-Kucing: 2
 Ikan: 2
 Badak: 1
+Anjing: 3
+Kucing: 2
 --------------
 No. 6 - get palindrome pets
 name: Bob, length: 3
 name: Otto, length: 4
 --------------
-No. 7 - sum even numbers from array
-numbers in array: [15 18 3 9 6 2 12 14]
+No. 7 - sum even numbers
+numbers: [15 18 3 9 6 2 12 14]
 even numbers: [18 6 2 12 14]
 total sum: 52
 --------------
