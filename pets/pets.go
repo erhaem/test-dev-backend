@@ -71,7 +71,6 @@ func PersiaToMaineCoon(list []Pet) []Pet {
 	for i, p := range list {
 		if p.Type == "Kucing" && p.Breed == "Persia" {
 			list[i].Breed = "Maine Coon"
-			list[i].Characteristic = []string{"Lebih besar", "Aktif"}
 		}
 	}
 	return list
