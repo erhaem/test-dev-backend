@@ -45,7 +45,7 @@ after replaced:
 {Type:Anjing Breed:Golden Retriever Name:Otto Characteristic:[Energik, Senang bermain bola] Favorite:true}
 {Type:Anjing Breed:Siberian Husky Name:Max Characteristic:[Bulu lebat, Mata biru] Favorite:true}
 {Type:Anjing Breed:Beagle Name:Bob Characteristic:[Ceria, Aktif mengajak Esa bermain di taman] Favorite:false}
-{Type:Kucing Breed:Maine Coon Name:Luna Characteristic:[Lebih besar, Aktif] Favorite:true}
+{Type:Kucing Breed:Maine Coon Name:Luna Characteristic:[Anggun, Manja] Favorite:true}
 {Type:Kucing Breed:British Short Hair Name:Milo Characteristic:[Cerdas, Aktif] Favorite:true}
 {Type:Ikan Breed:Koi Name:Nana Characteristic:[Indah] Favorite:false}
 {Type:Ikan Breed:Mas Name:Goldie Characteristic:[Berwarna cerah] Favorite:false}
@@ -58,8 +58,8 @@ Ikan: 2
 Badak: 1
 --------------
 No. 6 - get palindrome pets
-name: Otto, length: 4
 name: Bob, length: 3
+name: Otto, length: 4
 --------------
 No. 7 - sum even numbers from array
 numbers in array: [15 18 3 9 6 2 12 14]
