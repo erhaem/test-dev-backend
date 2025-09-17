@@ -6,16 +6,16 @@ import (
 )
 
 var samplePets = []Pet{
-	{Type: "Anjing", Breed: "Golden Retriever", Name: "Otto", Characteristic: "Energik", Favorite: true},
-	{Type: "Anjing", Breed: "Siberian Husky", Name: "Max", Characteristic: "Bulu lebat", Favorite: true},
-	{Type: "Anjing", Breed: "Beagle", Name: "Bob", Characteristic: "Ceria", Favorite: false},
-	{Type: "Kucing", Breed: "Persia", Name: "Luna", Characteristic: "Manja", Favorite: true},
-	{Type: "Kucing", Breed: "British Short Hair", Name: "Milo", Characteristic: "Cerdas", Favorite: true},
+	{Type: "Anjing", Breed: "Golden Retriever", Name: "Otto", Characteristic: []string{"Energik"}, Favorite: true},
+	{Type: "Anjing", Breed: "Siberian Husky", Name: "Max", Characteristic: []string{"Bulu lebat"}, Favorite: true},
+	{Type: "Anjing", Breed: "Beagle", Name: "Bob", Characteristic: []string{"Ceria"}, Favorite: false},
+	{Type: "Kucing", Breed: "Persia", Name: "Luna", Characteristic: []string{"Manja"}, Favorite: true},
+	{Type: "Kucing", Breed: "British Short Hair", Name: "Milo", Characteristic: []string{"Cerdas"}, Favorite: true},
 }
 
 func TestAddPet(t *testing.T) {
 	list := samplePets
-	newPet := Pet{Type: "Badak", Breed: "Jawa", Name: "Rino", Characteristic: "Pekerja keras", Favorite: true}
+	newPet := Pet{Type: "Badak", Breed: "Jawa", Name: "Rino", Characteristic: []string{"Pekerja keras"}, Favorite: true}
 	list = AddPet(list, newPet)
 
 	if list[len(list)-1].Name != "Rino" {

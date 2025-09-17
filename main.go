@@ -11,14 +11,21 @@ func main() {
 	// no. 1
 	fmt.Println("No. 1 - create Esa's pet list")
 	petsData := []pets.Pet{
-		{Type: "Anjing", Breed: "Golden Retriever", Name: "Otto", Characteristic: "Energik dan senang bermain bola", Favorite: true},
-		{Type: "Anjing", Breed: "Siberian Husky", Name: "Max", Characteristic: "Bulu lebat dan mata biru", Favorite: true},
-		{Type: "Anjing", Breed: "Beagle", Name: "Bob", Characteristic: "Ceria dan aktif bermain di taman", Favorite: false},
-		{Type: "Kucing", Breed: "Persia", Name: "Luna", Characteristic: "Anggun dan manja", Favorite: true},
-		{Type: "Kucing", Breed: "British Short Hair", Name: "Milo", Characteristic: "Cerdas dan aktif", Favorite: true},
-		{Type: "Ikan", Breed: "Koi", Name: "Nana", Characteristic: "Indah", Favorite: false},
-		{Type: "Ikan", Breed: "Mas", Name: "Goldie", Characteristic: "Berwarna cerah", Favorite: false},
-	}
+		{Type: "Anjing", Breed: "Golden Retriever", Name: "Otto",
+			Characteristic: []string{"Energik", "Senang bermain bola"}, Favorite: true},
+		{Type: "Anjing", Breed: "Siberian Husky", Name: "Max",
+			Characteristic: []string{"Bulu lebat", "Mata biru"}, Favorite: true},
+		{Type: "Anjing", Breed: "Beagle", Name: "Bob",
+			Characteristic: []string{"Ceria", "Aktif mengajak Esa bermain di taman"}, Favorite: false},
+		{Type: "Kucing", Breed: "Persia", Name: "Luna",
+			Characteristic: []string{"Anggun", "Manja"}, Favorite: true},
+		{Type: "Kucing", Breed: "British Short Hair", Name: "Milo",
+			Characteristic: []string{"Cerdas", "Aktif"}, Favorite: true},
+		{Type: "Ikan", Breed: "Koi", Name: "Nana",
+			Characteristic: []string{"Indah"}, Favorite: false},
+		{Type: "Ikan", Breed: "Mas", Name: "Goldie",
+			Characteristic: []string{"Berwarna cerah"}, Favorite: false},
+	}	
 	pets.PrintPets(petsData)
 	fmt.Println("--------------")
 
@@ -27,7 +34,7 @@ func main() {
 		Type:           "Badak",
 		Breed:          "Jawa",
 		Name:           "Rino",
-		Characteristic: "Pekerja keras",
+		Characteristic: []string{"Pekerja keras"},
 		Favorite:       true,
 	}
 	petsData = pets.AddPet(petsData, rino)
@@ -69,10 +76,10 @@ func main() {
 	fmt.Println("--------------")
 
 	// no. 7
-	fmt.Println("No. 7 - sum even numbers from array")
+	fmt.Println("No. 7 - sum even numbers")
 	nums := []int{15, 18, 3, 9, 6, 2, 12, 14}
 	sum, evens := utils.SumEven(nums)
-	fmt.Printf("numbers in array: %v\n", nums)
+	fmt.Printf("numbers: %v\n", nums)
 	fmt.Printf("even numbers: %v\n", evens)
 	fmt.Printf("total sum: %d\n", sum)
 	fmt.Println("--------------")

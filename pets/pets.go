@@ -10,16 +10,18 @@ type Pet struct {
 	Type           string
 	Breed          string
 	Name           string
-	Characteristic string
+	Characteristic []string
 	Favorite       bool
 }
 
 // print all pets in the list
 func PrintPets(list []Pet) {
 	for _, p := range list {
-		fmt.Printf("%+v\n", p)
+		fmt.Printf("{Type:%s Breed:%s Name:%s Characteristic:[%s] Favorite:%t}\n",
+			p.Type, p.Breed, p.Name, strings.Join(p.Characteristic, ", "), p.Favorite)
 	}
 }
+
 
 // add new pet
 func AddPet(list []Pet, p Pet) []Pet {
@@ -69,7 +71,6 @@ func PersiaToMaineCoon(list []Pet) []Pet {
 	for i, p := range list {
 		if p.Type == "Kucing" && p.Breed == "Persia" {
 			list[i].Breed = "Maine Coon"
-			list[i].Characteristic = "Lebih besar dan aktif"
 		}
 	}
 	return list
