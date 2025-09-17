@@ -76,10 +76,10 @@ func main() {
 	fmt.Println("--------------")
 
 	// no. 7
-	fmt.Println("No. 7 - sum even numbers from array")
+	fmt.Println("No. 7 - sum even numbers")
 	nums := []int{15, 18, 3, 9, 6, 2, 12, 14}
 	sum, evens := utils.SumEven(nums)
-	fmt.Printf("numbers in array: %v\n", nums)
+	fmt.Printf("numbers: %v\n", nums)
 	fmt.Printf("even numbers: %v\n", evens)
 	fmt.Printf("total sum: %d\n", sum)
 	fmt.Println("--------------")
